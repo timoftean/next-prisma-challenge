@@ -1,0 +1,16 @@
+type Category {
+  id: ID! @id
+  name: String! @unique
+}
+
+type Product {
+  id: ID! @id
+  name: String!
+  seoName: String @unique
+  description: String!
+  imageUrl: String
+  weight: Float
+  weightUnit: String
+  categories: [Category]!
+  score: Float! @default(value: 0)
+}

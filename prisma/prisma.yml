@@ -1,0 +1,8 @@
+endpoint: http://localhost:4466/prisma/local
+datamodel: datamodel.prisma
+secret: prisma_r@nd0m
+seed:
+  import: seed.graphql
+generate:
+  - generator: javascript-client
+    output: ./dist

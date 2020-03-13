@@ -1,0 +1,76 @@
+mutation {
+  product1: createProduct(
+    data: {
+      name: "Innocent Super Smoothie Invigorate 750Ml"
+      seoName: "innocent-super-smoothie-invigorate"
+      description: "This delicious super smoothie is a blend of crushed fruit, vegetables, pure juices, pumpkin and spirulina extract, seeds and botanicals and is fortified with added vitamins and minerals. Tasty and healthy and no added sugar or water. Super."
+      imageUrl: "https://d15m7jcmnw9usb.cloudfront.net/img/innocent-super-smoothie-invigorate.jpg"
+      weight: 750
+      weightUnit: "ml"
+      categories: { create: { name: "Smoothies" } }
+      score: 7.6
+    }
+  ) {
+    id
+  }
+
+  product2: createProduct(
+    data: {
+      name: "Triple Ginger Kombucha"
+      seoName: "triple-ginger-kombucha"
+      description: "Fix8 is colourful in appearance, lightly sparkling, tart and zingy in taste. Choose the Triple Ginger for fire, fragrance and pure feistiness with three layers of ginger falvour."
+      imageUrl: "https://d15m7jcmnw9usb.cloudfront.net/img/triple-ginger-kombucha.png"
+      weight: 330
+      weightUnit: "ml"
+      categories: { create: { name: "Drinks" } }
+      score: 6.8
+    }
+  ) {
+    id
+  }
+
+  product3: createProduct(
+    data: {
+      name: "Guinness Original Stout Beer"
+      seoName: "guinness-original-stout-beer-12-x-440ml-can"
+      description: "Guinness Original is crafted from finest quality malt, hops and Irish barley. Sharp and crisp to the taste, it's an entirely different experience from the smooth, creamy Guinness Draught and punchier Foreign Extra Stout, but the trademark Guinness flavours still preside.Guinness Original is based on a beer first brewed in 1821. Crisp hint of roasted barley and fresh breeze of hops gives a refreshing bite.If you were in a pub sometime between 1821 and 1970, chances are this is the Guinness you would have been drinking.Originally brewed as the XX version of our Porter, it's hoppy, roasty and crisp with a bittersweet finish.Still brewed at our St. James's Gate brewery in Dublin, Guinness Original is crafted from finest quality malt, hops and Irish barleyBeer drinkers who are looking for a quality beer from a trusted brandBrewed to perfection for over 200 years."
+      imageUrl: "https://d15m7jcmnw9usb.cloudfront.net/img/guinness-original-stout-beer-12-x-440ml-can.jpeg"
+      weight: 440
+      weightUnit: "ml"
+      categories: { create: { name: "Beer" } }
+      score: 8.2
+    }
+  ) {
+    id
+  }
+
+  product4: createProduct(
+    data: {
+      name: "Propercorn Sweet & Salty 30G"
+      seoName: "propercorn-sweet-salty"
+      description: "Popcorn sprinkled with the perfect balance of sea salt and raw cane sugar."
+      imageUrl: "https://d15m7jcmnw9usb.cloudfront.net/img/propercorn-sweet-salty.jpg"
+      weight: 30
+      weightUnit: "ml"
+      categories: { create: { name: "Crisps & Snacks" } }
+      score: 5.9
+    }
+  ) {
+    id
+  }
+
+  product5: createProduct(
+    data: {
+      name: "Oreo Cheesecake 425g"
+      seoName: "oreo-cheesecake-425g"
+      description: "Baked Vanilla Cheesecake on a Dark Chocolate Flavoured Biscuit and Oreo Crumb Base, Topped with Oreo Pieces."
+      imageUrl: "https://d15m7jcmnw9usb.cloudfront.net/img/oreo-cheesecake-425g.jpeg"
+      weight: 425
+      weightUnit: "g"
+      categories: { create: { name: "Ice Creams & Frozen Desserts" } }
+      score: 3.7
+    }
+  ) {
+    id
+  }
+}
