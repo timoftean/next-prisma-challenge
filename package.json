@@ -11,7 +11,7 @@
     "prisma:deploy": "cd prisma && prisma deploy -e .env && cd .."
   },
   "dependencies": {
-    "next": "9.3.0",
+    "next": "9.3.2",
     "prisma-client-lib": "^1.34.10",
     "react": "16.13.0",
     "react-dom": "16.13.0"
